@@ -24,3 +24,5 @@ cd /var/www
 change api_id , api_hash and token in config.py
 
 python3 bot.py
+
+* if you don't have domain , you can set equal domain to server in config.py
