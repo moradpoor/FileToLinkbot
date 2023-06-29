@@ -17,3 +17,10 @@ you need install some packages for run this code
 
 4 - pip install tgcrypto
 
+download and copy code into /var/www
+
+cd /var/www
+
+change api_id , api_hash and token in config.py
+
+python3 bot.py
