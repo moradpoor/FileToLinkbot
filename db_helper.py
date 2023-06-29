@@ -8,7 +8,7 @@ class DBHelper():
         self.conn = sqlite3.connect(self.dbname, check_same_thread=False)
     def setup(self):
         os.popen(f'touch "{dir_path+db_name}"')
-        stmt = 'CREATE TABLE IF NOT EXISTS personals (chat_id INTEGER)'
+        stmt = 'CREATE TABLE IF NOT EXISTS personals (chat_id INTEGER , ban INTEGER)'
         self.conn.execute(stmt)
         self.conn.commit()
     def NewUser(self,chat_id):
